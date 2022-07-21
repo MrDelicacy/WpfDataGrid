@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<colors>
+	<color>
+		<name>white</name>
+		<gradientColor_1>White</gradientColor_1>
+		<gradientColor_2>White</gradientColor_2>
+	</color>
+	<color>
+		<name>light gray</name>
+		<gradientColor_1>LightGray</gradientColor_1>
+		<gradientColor_2>LightGray</gradientColor_2>
+	</color>
+	<color>
+		<name>dark gray</name>
+		<gradientColor_1>DarkGray</gradientColor_1>
+		<gradientColor_2>DarkGray</gradientColor_2>
+	</color>
+	<color>
+		<name>black</name>
+		<gradientColor_1>Black</gradientColor_1>
+		<gradientColor_2>Black</gradientColor_2>
+	</color>
+	<color>
+		<name>blue</name>
+		<gradientColor_1>Blue</gradientColor_1>
+		<gradientColor_2>Blue</gradientColor_2>
+	</color>
+	<color>
+		<name>green</name>
+		<gradientColor_1>LawnGreen</gradientColor_1>
+		<gradientColor_2>LawnGreen</gradientColor_2>
+	</color>
+	<color>
+		<name>yellow</name>
+		<gradientColor_1>Yellow</gradientColor_1>
+		<gradientColor_2>Yellow</gradientColor_2>
+	</color>
+	<color>
+		<name>orange</name>
+		<gradientColor_1>Orange</gradientColor_1>
+		<gradientColor_2>Orange</gradientColor_2>
+	</color>
+	<color>
+		<name>red</name>
+		<gradientColor_1>Red</gradientColor_1>
+		<gradientColor_2>Red</gradientColor_2>
+	</color>
+	<color>
+		<name>dark red</name>
+		<gradientColor_1>Maroon</gradientColor_1>
+		<gradientColor_2>Maroon</gradientColor_2>
+	</color>
+	<color>
+		<name>purple</name>
+		<gradientColor_1>Purple</gradientColor_1>
+		<gradientColor_2>Purple</gradientColor_2>
+	</color>
+	<color>
+		<name>beige</name>
+		<gradientColor_1>BurlyWood</gradientColor_1>
+		<gradientColor_2>BurlyWood</gradientColor_2>
+	</color>
+	<color>
+		<name>brown</name>
+		<gradientColor_1>Chocolate</gradientColor_1>
+		<gradientColor_2>Chocolate</gradientColor_2>
+	</color>
+	<color>
+		<name>white effect</name>
+		<gradientColor_1>White</gradientColor_1>
+		<gradientColor_2>LightGray</gradientColor_2>
+	</color>
+	<color>
+		<name>light gray effect</name>
+		<gradientColor_1>White</gradientColor_1>
+		<gradientColor_2>Gray</gradientColor_2>
+	</color>
+	<color>
+		<name>dark gray effect</name>
+		<gradientColor_1>LightGray</gradientColor_1>
+		<gradientColor_2>DarkSlateGray</gradientColor_2>
+	</color>
+	<color>
+		<name>black effect</name>
+		<gradientColor_1>Gray</gradientColor_1>
+		<gradientColor_2>Black</gradientColor_2>
+	</color>
+	<color>
+		<name>blue effect</name>
+		<gradientColor_1>Blue</gradientColor_1>
+		<gradientColor_2>DarkBlue</gradientColor_2>
+	</color>
+	<color>
+		<name>green effect</name>
+		<gradientColor_1>LawnGreen</gradientColor_1>
+		<gradientColor_2>Green</gradientColor_2>
+	</color>
+	<color>
+		<name>yellow effect</name>
+		<gradientColor_1>White</gradientColor_1>
+		<gradientColor_2>Yellow</gradientColor_2>
+	</color>
+	<color>
+		<name>orange effect</name>
+		<gradientColor_1>White</gradientColor_1>
+		<gradientColor_2>Orange</gradientColor_2>
+	</color>
+	<color>
+		<name>red effect</name>
+		<gradientColor_1>OrangeRed</gradientColor_1>
+		<gradientColor_2>DarkMagenta</gradientColor_2>
+	</color>
+	<color>
+		<name>dark red effect</name>
+		<gradientColor_1>Red</gradientColor_1>
+		<gradientColor_2>Black</gradientColor_2>
+	</color>
+	<color>
+		<name>purple effect</name>
+		<gradientColor_1>Orchid</gradientColor_1>
+		<gradientColor_2>DarkMagenta</gradientColor_2>
+	</color>
+	<color>
+		<name>beige effect</name>
+		<gradientColor_1>Beige</gradientColor_1>
+		<gradientColor_2>BurlyWood</gradientColor_2>
+	</color>
+	<color>
+		<name>brown effect</name>
+		<gradientColor_1>DarkSalmon</gradientColor_1>
+		<gradientColor_2>Black</gradientColor_2>
+	</color>
+</colors>

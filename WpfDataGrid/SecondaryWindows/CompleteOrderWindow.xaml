@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfDataGrid.SecondaryWindows.CompleteOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataGrid.SecondaryWindows"
+        mc:Ignorable="d"
+        Title="Завершить заказ" Height="480" Width="480" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="60"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Content="Вид услуги:" Height="30"/>
+            <RadioButton GroupName="OrderService" Content="колеровка" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="OrderService" Content="приготовление по коду" Checked="RadioButton_Checked"/>
+            <RadioButton GroupName="OrderService" Content="транслак" Checked="RadioButton_Checked"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Bottom" Grid.Row="1"  Grid.Column="1">
+            <Label Content="Дополнительные услуги:" Height="30"/>
+            <CheckBox Content="колеровка по спектрофотометру" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            <CheckBox Content="автомобиль на улице" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            <CheckBox Content="доколеровка" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+            <CheckBox Content="слив по спектрофотометру" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        </StackPanel>
+        <StackPanel  Grid.Row="2"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Label x:Name="SliderDigit" FontSize="50" Height="70"/>
+        </StackPanel>
+        <StackPanel x:Name="MyPanel" Orientation="Horizontal" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center"/>
+        <Slider Value="0" Minimum="0" Maximum="10" SelectionStart="0" IsSelectionRangeEnabled="False" ValueChanged="Slider_ValueChanged" Grid.Row="4"  Grid.Column="1"/>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="5" Grid.Column="1" Margin="0,0,10,0">
+            <Button IsDefault="True" Style="{StaticResource CancelOkButtons}" Click="Accept_Click" IsEnabled="{Binding CanCreateOrder}">OK</Button>
+            <Button IsCancel="True" Style="{StaticResource CancelOkButtons}">Отмена</Button>
+        </StackPanel>
+    </Grid>
+</Window>

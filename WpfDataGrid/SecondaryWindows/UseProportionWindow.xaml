@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfDataGrid.SecondaryWindows.UseProportionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataGrid.SecondaryWindows"
+        mc:Ignorable="d"
+        Height="450" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Column="1" Visibility="Visible" VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+                <DataGrid ItemsSource="{Binding RecipeComponents}"  AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                        <DataGridTextColumn Header="микс" Binding="{Binding Path=ComponentName}" Width="*"/>
+                        <DataGridTextColumn Header="пропорция" Binding="{Binding Path=AbsoluteAmount}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        </ScrollViewer>
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+            <Label Content="разбавитель:" Style="{StaticResource Lbl_tab}"/>
+            <Label Content="{Binding Thinner.AbsoluteAmount}" Style="{StaticResource Lbl_tab}"/>
+            <Label Content="миксы:" Style="{StaticResource Lbl_tab}"/>
+            <TextBox x:Name="txtTotalWeight" Text="100" Style="{StaticResource Txt_tab}" LostFocus="txtTotalWeight_LostFocus"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+            <Button Style="{Binding Source={StaticResource CancelOkButtons}}"  IsDefault="True" Click="Accept_Click" x:Name="ok_button"/>
+            <Button Style="{Binding Source={StaticResource CancelOkButtons}}" IsCancel="True">Отмена</Button>
+        </StackPanel>
+    </Grid>
+</Window>
